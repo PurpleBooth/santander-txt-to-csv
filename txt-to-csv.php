@@ -90,7 +90,8 @@ foreach ($blocks as $row) {
     $extractedRows[] = extractRow(trim($row));
 }
 
-// Assume that all of the blocks will have the same keys in it. Use them as the header for the CSV file
+// Assume that all of the blocks will have the same keys in it
+// Use the keys from the last transaction block as the header for the CSV file
 $lastRow = array_pop($extractedRows);
 array_push($extractedRows, $lastRow);
 fputcsv(STDOUT, array_keys($lastRow));
