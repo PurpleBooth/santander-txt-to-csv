@@ -11,7 +11,13 @@ Usage
 -----
 
 ```Shell
-php txt-to-csv.php whatever-the-csv-is.csv
+php txt-to-csv.php statement000000000.txt
 ```
 
-Outputs to STDOUT
+Outputs CSV to STDOUT
+
+```Shell
+php txt-to-csv.php statement000000000.txt > csv-file.csv
+```
+
+Outputs to csv-file.csv

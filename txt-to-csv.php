@@ -1,7 +1,10 @@
 <?php
 
 /**
- * Usage: php txt-to-csv.php whatever-the-csv-is.csv
+ * Usage: php txt-to-csv.php statement000000000.txt
+ *
+ * Or: php txt-to-csv.php statement000000000.txt > csv-file.csv
+ * to output to a file.
  */
 
 /**
